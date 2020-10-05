@@ -16,7 +16,7 @@ public class BarChart {
         System.out.printf("Enter five integers between 1 and 30 (space-separated),%n"
                 + "Input a letter to end the program.%n");
 
-        while(input.hasNextInt()) { // Keeps iterating until a letter is output
+        while(input.hasNextInt()) {  // Keeps iterating until a letter is output
 
             int number = input.nextInt();
 

@@ -9,7 +9,7 @@ public class SmallestValue {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-        int count; // Number of integers entered by user
+        int count;  // Number of integers entered by user
         int number; // The numbers input by user
         int smallest = 0; // The smallest value
 
