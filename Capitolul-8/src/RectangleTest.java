@@ -14,7 +14,7 @@ public class RectangleTest {
         System.out.println("Area of Rectangle : "+rec1.getArea());
         System.out.println("Perimeter of Rectangle : "+rec1.getPerimeter());
 
-        // Setting the length and width more than 20
+         // Setting the length and width more than 20
 
         rec1.setWidth(22);
         rec1.setLength(25);

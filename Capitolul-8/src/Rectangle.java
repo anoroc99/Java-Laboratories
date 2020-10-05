@@ -6,8 +6,8 @@
 
 
 public class Rectangle {
-    private float length; //The rectangle lentgth
-    private float width; //The rectangle width
+    private float length;  //The rectangle lentgth
+    private float width;  //The rectangle width
 
     public Rectangle() {
         this.length= 1;

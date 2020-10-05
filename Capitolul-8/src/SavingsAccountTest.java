@@ -5,7 +5,7 @@ public class SavingsAccountTest {
         SavingsAccount account1 = new SavingsAccount(2000);
         SavingsAccount account2 = new SavingsAccount(3000);
 
-        // Make annual interest rate 4%
+         // Make annual interest rate 4%
         account1.modifyInterestRate(.04);
 
         // Prints out balance for next 12 months
