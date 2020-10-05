@@ -16,7 +16,7 @@ public class ParkingCharge {
 
         Scanner input = new Scanner(System.in);
 
-        double hours = 0; // Number of hours car was in the garage
+        double hours = 0;  // Number of hours car was in the garage
         double charge; // Total charge for each customer during the day
 
         System.out.print("Enter hours parked in garage or -1 to quit: ");
