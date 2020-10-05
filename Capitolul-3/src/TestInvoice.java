@@ -1,18 +1,13 @@
-class TestInvoice {
-    public static void main(String[] args) {
-        printInfo(new Invoice("100", "Flowers", 21, 40));
-        System.out.println();
-        printInfo(new Invoice("", "", 6, 5));
-        System.out.println();
-        printInfo(new Invoice(null, null, -6, -9));
-        System.out.println();
+public class TestInvoice {
 
+    public static void main(String[] args)
+    {
 
+        Invoice product = new Invoice("100", "Red flowers", 40, 7.35);
+        System.out.printf("Product number: %s", product.getNumber());
+        System.out.printf("\nDescription: %s", product.getDescription());
+        System.out.printf("\nQuantity: %d", product.getQuantity());
+        System.out.printf("\nPrice Per Unit: $%.2f", product.getPrice());
+        System.out.printf("\nInvoice Amount: $%.2f%n", product.getInvoiceAmount());
     }
-
-    private static void printInfo(Invoice invoice) {
-        System.out.printf("PartNumber: %s%nDescription: %s%nQuantity: %d%nPrice: $%.2f%nInvoice Amount: $%.2f%n",
-                invoice.getPartNumber(), invoice.getDescription(), invoice.getQuantity(),
-                invoice.getPrice(), invoice.getInvoiceAmount());
-    }
-}
+} // end class TestInvoice

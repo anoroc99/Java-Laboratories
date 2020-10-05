@@ -9,71 +9,79 @@
 //quantity is not positive, it should be set to 0. If the price per item is not positive, it should be set to
 //0.0. Write a test app named InvoiceTest that demonstrates class Invoice’s capabilities.
 
-class Invoice {
+public class Invoice {
 
-    private String partNumber;
+    private String number;
     private String description;
     private int quantity;
     private double price;
 
-    public Invoice(String partNumber, String description, int quantity, double price) {
-        if (partNumber == null || partNumber.isBlank())
-            partNumber = "## No part number provided ##";
-
-        if (description == null || description.isBlank())
-            description = "## No description provided ##";
-
-        // If the quantity is not positive, it should be set to 0
-        if (quantity < 0)
-            quantity = 0;
-
-        // If the price per item is not positive, it should be set to 0.0.
-        if (price <= 0.0)
-            price = 0.0;
-
-        this.partNumber = partNumber;
+    // Constructor
+    public Invoice(String number, String description, int quantity, double price)
+    {
+        this.number = number;
         this.description = description;
         this.quantity = quantity;
         this.price = price;
+    } // end constructor
+
+    // Method to get invoice amount
+    public double getInvoiceAmount()
+    {
+        return quantity * price;
     }
 
-    public String getPartNumber() {
-        return partNumber;
-    }
+    // Set method for number
+    public void setNumber(String number)
+    {
+        this.number = number;
+    } // end method setNumber
 
-    public void setPartNumber(String partNumber) {
-        if (partNumber != null && !partNumber.isBlank())
-            this.partNumber = partNumber;
-    }
+    // Get method for number
+    public String getNumber()
+    {
+        return number;
+    } // end method getNumber
 
-    public String getDescription() {
+    // Set method for description
+    public void setDescription(String description)
+    {
+        this.description = description;
+    } // end method setDescription
+
+    // Get method for description
+    public String getDescription()
+    {
         return description;
-    }
+    } // end method getDescription
 
-    public void setDescription(String description) {
-        if (description != null && !description.isBlank())
-            this.description = description;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        if (quantity >= 0)
+    // Set method for quantity
+    public void setQuantity(int quantity)
+    {
+        if (quantity > 0)
             this.quantity = quantity;
-    }
+        else
+            this.quantity = 0;
+    } // End method setQuantity
 
-    public double getPrice() {
-        return price;
-    }
+    // Get method for quantity
+    public int getQuantity()
+    {
+        return quantity;
+    } // end method getQuantity
 
-    public void setPrice(double price) {
-        if (price >= 0.0)
+    // Set method for price
+    public void setPrice(double price)
+    {
+        if (price > 0)
             this.price = price;
-    }
+        else
+            this.price = 0;
+    } // end method setPrice
 
-    public double getInvoiceAmount() {
-        return this.quantity * this.price;
-    }
-}
+    // Get method for price
+    public double getPrice()
+    {
+        return price;
+    } // end method getPrice
+} // end class Invoice
