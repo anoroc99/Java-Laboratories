@@ -20,7 +20,7 @@ public class VariableLengthList {
         System.out.printf("Num1 * Num2 * Num3 = %.2f%n", product(num1, num2, num3));
         System.out.printf("Num1 * Num2 * Num4 = %.2f%n", product(num1, num2, num4));
         System.out.printf("Num1 * Num2 * Num4 = %.2f%n", product(num1, num2, num3, num4));
-    } // end method main
+    }  // end method main
 
     // Calculates the product of a variable number of integers
     public static double product(double... numbers)

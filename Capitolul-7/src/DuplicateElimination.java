@@ -13,7 +13,7 @@ public class DuplicateElimination {
 
         Scanner input = new Scanner(System.in);
 
-        int[] num = new int[5]; // The array with 5 elements
+        int[] num = new int[5];  // The array with 5 elements
         int unique = 0; // Unique numbers entered by user
         int Number;
 
