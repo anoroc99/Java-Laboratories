@@ -11,7 +11,7 @@ public class VariableLengthList {
         double num3 = 6.8;
         double num4 = 4.12;
 
-        System.out.print("Num1 = 1.5\n" + "Num2 = 19.3\n" + "Num3 = 6.8\n" + "Num4 = 4.12\n");
+        System.out.print("Num1 = 1.5\n + Num2 = 19.3\n + Num3 = 6.8\n + Num4 = 4.12\n");
 
         System.out.printf("Num1 * Num2 = %.2f%n", product(num1, num2));
         System.out.printf("Num1 * Num2 * Num3 = %.2f%n", product(num1, num2, num3));
