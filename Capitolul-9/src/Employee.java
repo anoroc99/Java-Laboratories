@@ -18,29 +18,29 @@ public class Employee {
     private final String lastName;
     private final String socialSecurityNumber;
 
-    //  constructor
+
     public Employee(String firstName, String lastName, String socialSecurityNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.socialSecurityNumber = socialSecurityNumber;
-    } // end constructor
+    }
 
-    // return first name
+    //  first name
     public String getFirstName() {
         return firstName;
     }
 
-    // return last name
+    //  last name
     public String getLastName() {
         return lastName;
     }
 
-    // return social security number
+    //  social security number
     public String getSocialSecurityNumber() {
         return socialSecurityNumber;
     }
 
-    // return String representation of Employee
+    //  String representation of Employee
     @Override
     public String toString() {
         return String.format("%s: %s %s%n%s: %s%n",

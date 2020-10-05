@@ -1,10 +1,9 @@
 public class CommissionEmployeeTest {
     public static void main(String[] args) {
-        // instantiate CommissionEmployee object
-        CommissionEmployee employee = new CommissionEmployee(
-                "Ciopcic", "Irina", "200587462544", 15000, .06);
 
-        // get commission employee data
+        CommissionEmployee employee = new CommissionEmployee(
+                "Noroc", "Adic", "200587462544", 15000, .06);
+
         System.out.println(
                 "Employee information obtained by get methods:");
         System.out.printf("%n%s %s%n", "First name is",

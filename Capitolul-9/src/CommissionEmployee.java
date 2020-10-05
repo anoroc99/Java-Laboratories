@@ -14,7 +14,7 @@ public class CommissionEmployee extends Employee {
         setCommissionRate(commissionRate);
 
 
-    } // end constructor
+    }
 
 
     // set gross sales amount
@@ -27,7 +27,7 @@ public class CommissionEmployee extends Employee {
         this.grossSales = grossSales;
     }
 
-    // return gross sales amount
+    //  gross sales amount
     public double getGrossSales() {
         return grossSales;
     }
@@ -42,7 +42,7 @@ public class CommissionEmployee extends Employee {
         this.commissionRate = commissionRate;
     }
 
-    // return commission rate
+    //  commission rate
     public double getCommissionRate() {
         return commissionRate;
     }

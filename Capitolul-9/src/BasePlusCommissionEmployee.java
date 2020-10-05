@@ -16,7 +16,6 @@ public class BasePlusCommissionEmployee extends CommissionEmployee {
         this.baseSalary = baseSalary;
     }
 
-    // set base salary
     public void setBaseSalary(double baseSalary) {
         if (baseSalary < 0.0)
             throw new IllegalArgumentException(
@@ -25,18 +24,16 @@ public class BasePlusCommissionEmployee extends CommissionEmployee {
         this.baseSalary = baseSalary;
     }
 
-    // return base salary
     public double getBaseSalary() {
         return baseSalary;
     }
 
-    // calculate earnings
     @Override
     public double earnings() {
         return getBaseSalary() + super.earnings();
     }
 
-    // return String representation of BasePlusCommissionEmployee
+
     @Override
     public String toString() {
         return String.format("%s %s%n%s: %.2f", "base-salaried",
