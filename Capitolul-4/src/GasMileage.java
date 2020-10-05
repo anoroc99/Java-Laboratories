@@ -10,7 +10,7 @@
 import java.util.Scanner;
 
 public class GasMileage {
-    // main method begins execution of Java  application
+    // main method begins execution of Java application
     public static void main(String[] args) {
 
         Scanner input = new Scanner (System.in);
