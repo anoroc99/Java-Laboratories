@@ -6,8 +6,8 @@
 import java.util.Scanner;
 
 public class Arithmetic {
-    // main method begins execution of Java application
-    public static void main(String[] args) {
+
+    public static void main(String[] args) { // main method begins execution of Java application
         Scanner input = new Scanner(System.in);
 
         int x; // First number
