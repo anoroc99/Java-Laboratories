@@ -1,6 +1,6 @@
 public class SavingsAccountTest {
 
-    public static void main(String args[])
+    public static void main(String[] args)
     {
         SavingsAccount account1 = new SavingsAccount(2000);
         SavingsAccount account2 = new SavingsAccount(3000);
