@@ -10,4 +10,4 @@ public class TestInvoice {
         System.out.printf("\nPrice Per Unit: $%.2f", product.getPrice());
         System.out.printf("\nInvoice Amount: $%.2f%n", product.getInvoiceAmount());
     }
-} // end class TestInvoice
+} //  end class TestInvoice

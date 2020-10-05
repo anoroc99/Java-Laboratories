@@ -7,7 +7,7 @@
 
 public class Account
 {
-    private String name; // instance variable
+    private String name; //  instance variable
     private double balance; // instance variable
 
     // Account constructor that receives two parameters

@@ -16,7 +16,7 @@ public class Invoice {
     private int quantity;
     private double price;
 
-    // Constructor
+    //  Constructor
     public Invoice(String number, String description, int quantity, double price)
     {
         this.number = number;

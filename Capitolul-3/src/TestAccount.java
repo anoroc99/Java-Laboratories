@@ -7,7 +7,7 @@ public class TestAccount
         Account account1 = new Account("Noroc Adelina", 100.00);
         Account account2 = new Account("Noroc Adic", 295.53);
 
-        // display initial balance of each object
+        //  display initial balance of each object
         System.out.printf("%s balance: $%.2f%n",
                 account1.getName(), account1.getBalance());
         System.out.printf("%s balance: $%.2f%n%n",
