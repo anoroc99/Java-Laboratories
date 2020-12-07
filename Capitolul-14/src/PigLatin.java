@@ -11,7 +11,6 @@
 //        Method printLatinWord should display each word. Each token is passed to method printLatin�
 //        Word to print the pig Latin word. Enable the user to input the sentence. Keep a running display of
 //        all the converted sentences in a text area.
-
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
