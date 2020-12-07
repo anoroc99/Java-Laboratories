@@ -9,7 +9,6 @@
 //        array should contain the nouns "boy", "girl", "dog", "town" and "car"; the verb array should con�
 //        tain the verbs "drove", "jumped", "ran", "walked" and "skipped"; the preposition array should
 //        contain the prepositions "to", "from", "over", "under" and "on".
-
 public class RandomSentences {
 
     public static void main(String[] args) {
