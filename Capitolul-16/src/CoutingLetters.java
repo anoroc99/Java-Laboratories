@@ -11,33 +11,33 @@ public class CoutingLetters
 {
     public static void main(String[] args)
     {
-        // create HashMap to store String keys and Integer values
+
         Map<String, Integer> myMap = new HashMap<>();
 
-        createMap(myMap); // create map based on user input
+        createMap(myMap);
         displayMap(myMap); // display map content
     } // end main
 
-    // create map from user input
+
     private static void createMap(Map<String, Integer> map)
     {
-        Scanner scanner = new Scanner(System.in); // create scanner
-        System.out.println("Enter a string:"); // prompt for user input
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a string:");
         String input = scanner.nextLine();
 
         // tokenize the input
         Matcher mat = Pattern.compile("\\w").matcher(input);
 
-        // processing input text
+
         while (mat.find())
         {
-            String letter = mat.group().toLowerCase(); // get lowercase letter
+            String letter = mat.group().toLowerCase();
 
-            // if the map contains the letter
-            if (map.containsKey(letter)) // is letter in map
+
+            if (map.containsKey(letter))
             {
-                int count = map.get(letter); // get current count
-                map.put(letter, count + 1); // increment count
+                int count = map.get(letter);
+                map.put(letter, count + 1);
             }
             else
                 map.put(letter, 1); // add new letter with a count of 1 to map
