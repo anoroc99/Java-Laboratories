@@ -15,7 +15,7 @@ public class CoutingLetters
         Map<String, Integer> myMap = new HashMap<>();
 
         createMap(myMap);
-        displayMap(myMap); // display map content
+        displayMap(myMap);
     } // end main
 
 
@@ -47,9 +47,9 @@ public class CoutingLetters
     // display map content
     private static void displayMap(Map<String, Integer> map)
     {
-        Set<String> keys = map.keySet(); // get keys
+        Set<String> keys = map.keySet();
 
-        // sortarea cheilor
+        // sort keys
         TreeSet<String> sortedKeys = new TreeSet<>(keys);
 
         System.out.printf("%nMap contains:%nKey\t\tValue%n");
